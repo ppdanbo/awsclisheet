@@ -1,15 +1,13 @@
 #good links: 
 https://www.dowdandassociates.com/blog/content/howto-get-amazon-ec2-instance-metadata/
 
-#Cmd to check local instance
+#how to check local instance within the EC2
 
 #get instance id
 wget -q -O - http://169.254.169.254/latest/meta-data/instance-id
 
-#get hostname
 #find the metadata set of instance info
 !curl http://169.254.169.254/latest/
-
 !curl http://169.254.169.254/latest/meta-data/
 
 #instance-id & hostname
